@@ -1,0 +1,186 @@
+
+/* Background de fundo Left+Right */
+html, body {
+ margin: 0;
+ padding: 0;
+ height: 100%;
+ overflow: hidden ;
+}
+
+.container {
+ display: flex;
+ height: 100vh;
+ max-width: 100vw;
+  max-height: 100vh;
+ background: linear-gradient(to bottom,rgb(8, 2, 92), rgb(63, 2, 104), black);
+ overflow: hidden;
+}
+
+.left-side {
+  flex: 0.4;
+  padding: 2rem;
+}
+
+.right-side {
+  flex: 0.6;
+  position: relative;
+  top: -10px;
+  transform: scale(1.1);
+  z-index: 2; 
+}
+
+.right-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 42% 30%;
+  opacity: 0.9;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 40px;
+  border-bottom-left-radius: 100% 100%;
+  border-bottom-right-radius: 100% 30%;
+  filter: drop-shadow(-40px 0px 20px rgba(0, 0, 0, 1)); 
+}
+
+.background-layer {
+  position: relative;
+  z-index: 1; 
+}
+
+
+/* particles */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estílo do campo de busca */
+.busca-container { 
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  z-index: 999;
+  width: 360px;
+  height: 800px;
+  background: linear-gradient(to bottom,rgb(8, 2, 92), rgb(63, 2, 104), black);
+  border: 1px solid rgba(242, 240, 244, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 100% 62%;
+  filter: drop-shadow(40px 0px 30px rgb(0, 0, 0, 1));
+  overflow-y: auto;
+}
+
+/* Campo de busca */
+.campo-busca-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.campo-busca-wrapper i {
+  position: absolute;
+  left: 12px;
+  top: 55px;
+  transform: translateY(-50%);
+  color: #bbb;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+#campoBusca {
+  margin-top: 30px;
+  padding: 15px 10px 15px 35px;
+  font-size: 16px;
+  color: #bbb;
+  border: 2px solid white;
+  border-radius: 40px;
+  background-color: #fbfbfb30;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s;
+}
+
+#campoBusca::placeholder {
+  color: #bbb;
+  font-family: Manrope;
+}
+
+#campoBusca:focus {
+  box-shadow: 0 0 5px #7b3fe4;
+}
+
+/* Botão */
+button {
+  padding: 10px;
+  margin-top: 0px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background-color: #ffda44; /* Amarelo suave */
+  color: #1a0033;
+  border: none;
+  border-radius: 40px;
+  font-family: Anton;
+  text-align: center ;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e5c122;
+  transform: scale(1.05);
+}
+
+/* Resultado fixo */
+#resultado {
+  flex-grow: 1;
+  margin-top: 1px;
+  text-indent: -10px;
+  background-color: #fbfbfb30;
+  padding: 11px 20px 10px 30px;
+  border-bottom-right-radius: 100% 59%;
+  border-bottom-left-radius: 1% 9%;
+  border-top-right-radius: 10% 10%;
+  border-top-left-radius: 10% 10%;
+  color: #bbb;
+  font-family: 'Roboto flex';
+  font-size: 15px;
+  overflow-y: auto;
+  border: none;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 1%, rgba(0,0,0,0.1) 1%);
+
+  -webkit-mask-image: linear-gradient(to bottom, rgba(63,2,104) 60%, rgba(0,0,0,0.00090) 90%);
+  
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+}
+
+
+

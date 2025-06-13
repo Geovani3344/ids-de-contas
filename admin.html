@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - Gerenciar IDs</title>
+</head>
+<body>
+
+    <h1>Painel Administrativo</h1>
+
+    <h2>Adicionar Novo ID</h2>
+    <input type="text" id="id" placeholder="ID">
+    <input type="text" id="servidor" placeholder="Servidor">
+    <button onclick="adicionarID()">Adicionar</button>
+
+    <h2>Remover ID</h2>
+    <input type="text" id="idRemover" placeholder="ID">
+    <input type="text" id="servidorRemover" placeholder="Servidor">
+    <button onclick="removerID()">Remover</button>
+
+    <h2>Todos os IDs cadastrados</h2>
+    <div id="listaIds">Carregando...</div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+    <!-- Seu arquivo JavaScript -->
+    <script src="admin.js"></script>
+
+</body>
+</html>
