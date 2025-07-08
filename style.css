@@ -92,7 +92,7 @@ html, body {
   box-sizing: border-box;
   border-bottom-right-radius: 100% 62%;
   filter: drop-shadow(40px 0px 30px rgb(0, 0, 0, 1));
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 /* Campo de busca */
@@ -186,34 +186,34 @@ button:hover {
 @media screen and (max-width: 768px) {
 
  
-  body{
+  html,body{
     display:flex;
     flex-direction:column-reverse; 
     height:100vh;                
     margin:0;
+    overflow: hidden !important;
   }
 
    .right-side {
-  height: 150vh;           
-  width: 110%;
+  height: 300vh;           
+  width: 160%;
   flex: 0 0 60vh;
   left: -43px;
   
 }
 
   .busca-container{
-    flex:0 0 50vh;    
+    flex:0 0 50vh;
+    left: -10px;    
     height:50vh;
-    width:100%;
+    width:105%;
     max-width:none;   
     margin:0;         
     overflow-y:auto; 
     z-index:10;
-    border-bottom-left-radius: 0% 150 %;
-    filter: drop-shadow(40px 0px 30px rgb(0, 0, 0, 1));
-    mask-image: none;
-    -webkit-mask-image: none;
-
+    border-bottom-right-radius: 100% 40%;
+    filter: drop-shadow(10px 20px 30px rgb(0, 0, 0, 1));
+    overflow: hidden;
   }
 
   .background-layer{
@@ -222,31 +222,53 @@ button:hover {
     position:relative;
     z-index:5;
   }
-  .container,.right-side,.image-wrapper{
+ .right-side,.image-wrapper{
     height:100%;      
     width: 110%;
     border-radius: 0;
-    border-top-right-radius: 100% 30%;
+    border-top-right-radius: 100% 40%;
+    filter: none !important
   }
+  
+ .container {
+  filter: drop-shadow( -10px -20px 30px rgb(0, 0, 0, 1));
+  box-shadow: none;
+  height:100%;      
+  width: 110%;
+  border-radius: 0;
+  border-top-right-radius: 100% 30%;
+  overflow: hidden;
+  }
+
+
   .right-side img{
     height:100%;
     width:100%;
     object-fit:cover; 
-    left: -20px;
-   
+    left: -90px;
+
   }
-}
+
    #resultado {
   flex-grow: 1;
-  margin-top: 1px;
+  transform: translateY(0px);
+  margin-top: 0px;
+  max-height: 70vh;
+  min-height: 700px;
   text-indent: -10px;
   border-radius: 20px;
   background-color: #fbfbfb30;
   padding: 11px 20px 10px 30px;
-  color: #bbb;
+  color: #fdfbfb;
   font-family: 'Roboto flex';
   font-size: 15px;
-  overflow-y: auto;
+  mask-image:none;
+  -webkit-mask-image:none;
   border: none;
 }
+
+}
+
+
+
 
