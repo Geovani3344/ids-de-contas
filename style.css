@@ -291,8 +291,8 @@ button:hover {
 
 
   .right-side img{
-    height:100%;
-    width:100%;
+    height: auto;
+    max-width:100%;
     object-fit:cover; 
     object-position: 60% center;
 
@@ -319,9 +319,9 @@ button:hover {
 @import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
 
 .codetheworld-io {
-  position: fixed; 
-  top: 50%; 
-  right: 5px; 
+  position: relative; 
+  top: 19%; 
+  right: -350px; 
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -363,7 +363,6 @@ a:hover {
 }
 
 
-}
 
 
 
