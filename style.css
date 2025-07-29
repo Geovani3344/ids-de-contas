@@ -237,7 +237,7 @@ button:hover {
     flex-direction:column-reverse; 
     height:100vh;                
     margin:0;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
   }
 
    .right-side {
@@ -277,6 +277,9 @@ button:hover {
   }
   
  .container {
+  max-width: 100%;
+  height: auto;
+  position: relative;
   filter: drop-shadow( -10px -10px 30px rgb(0, 0, 0, 1));
   box-shadow: none;
   height:100%;      
