@@ -328,8 +328,8 @@ button:hover {
 
 .codetheworld-io {
   position: relative; 
-  top: 15%!important; 
-  right: -300px!important; 
+  top: 12%!important; 
+  right: -370px!important; 
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
