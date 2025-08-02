@@ -280,7 +280,7 @@ button:hover {
   max-width: 100%;
   height: auto;
   position: relative;
-  filter: drop-shadow( -10px -10px 30px rgb(0, 0, 0, 1));
+  filter: drop-shadow( -10px -10px 10px rgb(0, 0, 0, 1));
   box-shadow: none;
   height:100%;      
   width: 110%;
@@ -290,7 +290,7 @@ button:hover {
   }
 
 
-  .right-side img{
+  .right-side img{ 
     height: auto;
     max-width:100%;
     object-fit:cover; 
@@ -300,12 +300,10 @@ button:hover {
 
   .image-wrapper {
   overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(white, black); /* corrige vazamento no iOS */
-  mask-image: radial-gradient(circle at 100% 100%, black 80%, transparent 100%);
+  
 }
 
-
-   #resultado {
+#resultado {
   flex-grow: 1;
   transform: translateY(0px);
   margin-top: 0px;
@@ -327,7 +325,9 @@ button:hover {
 @import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
 
 .codetheworld-io {
-  position: relative;  
+  position: relative; 
+  top: 10%!important; 
+  left: 90%!important; 
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
