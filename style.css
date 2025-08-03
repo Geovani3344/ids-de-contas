@@ -368,7 +368,11 @@ a:hover {
   0 0 200px var(--color);
 }
 
-
+@media screen and (min-device-width: 375px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .codetheworld-io {
+    left: 75% !important; /* Ajuste fino só pro iOS */
+  }
+}
 
 
 
