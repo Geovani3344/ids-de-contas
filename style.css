@@ -280,7 +280,7 @@ button:hover {
   max-width: 100%;
   height: auto;
   position: relative;
-  filter: drop-shadow( -10px -9px 8px rgb(0, 0, 0, 1));
+  filter: drop-shadow( -20px -10px 10px rgb(0, 0, 0, 1));
   box-shadow: none;
   height:100%;      
   width: 110%;
