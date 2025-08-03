@@ -102,7 +102,7 @@ html, body {
 
 /* particles */
 #particles-js {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -368,16 +368,5 @@ a:hover {
   0 0 200px var(--color);
 }
 
-/* particles */
-#particles-js {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  pointer-events: none;
-
-}
 
 
