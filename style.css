@@ -280,7 +280,7 @@ button:hover {
   max-width: 100%;
   height: auto;
   position: relative;
-  filter: drop-shadow( -10px -10px 7px rgb(0, 0, 0, 1));
+  filter: drop-shadow( -10px -10px 6px rgb(0, 0, 0, 1));
   box-shadow: none;
   height:100%;      
   width: 110%;
@@ -294,7 +294,7 @@ button:hover {
     height: auto;
     max-width:100%;
     object-fit:cover; 
-    transform: translate(-70px);
+    transform: translate(-90px);
     
   }
 
@@ -371,7 +371,6 @@ a:hover {
 @media screen and (min-device-width: 375px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .codetheworld-io {
     left: 83% !important; /* Ajuste fino só pro iOS */
-    top: 13%!important;
   }
 }
 
